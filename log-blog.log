@@ -1,0 +1,1865 @@
+2015-11-20 03:02:05 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-20 03:02:05 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-20 03:02:05 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-20 03:02:05 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-20 03:02:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-20 03:02:06 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-20 03:02:07 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-20 03:02:07 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-20 03:02:07 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-20 03:02:07 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-20 03:02:07 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-20 03:02:07 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-20 03:02:07 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-20 03:02:07 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-20 03:02:07 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-20 03:02:07 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-20 03:02:07 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-20 03:02:07 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-20 03:02:07 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-20 03:02:07 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-20 03:02:07 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-20 03:02:07 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-20 03:02:07 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-20 03:02:07 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-20 03:02:07 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-20 03:02:07 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-20 03:02:07 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-20 03:02:07 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-20 03:02:07 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-20 03:02:07 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-20 03:02:07 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-20 03:02:07 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-20 03:02:07 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-20 03:02:07 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-20 03:02:07 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:15:35 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:15:35 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:15:35 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:15:35 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:15:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:15:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:15:37 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:15:37 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:15:37 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:15:37 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:15:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:15:37 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:15:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:15:37 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:15:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:15:37 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:15:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:15:37 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:15:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:15:37 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:15:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:15:37 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:15:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:15:38 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:15:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:15:38 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:15:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:15:38 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:15:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:15:38 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:15:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:15:38 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:15:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:15:38 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:15:38 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:18:17 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:18:17 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:18:17 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:18:17 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:18:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:18:18 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:18:19 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:18:19 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:18:19 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:18:19 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:18:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:18:20 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:18:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:18:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:18:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:18:20 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:18:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:18:20 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:18:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:18:20 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:18:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:18:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:18:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:18:20 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:18:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:18:20 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:18:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:18:20 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:18:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:18:20 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:18:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:18:20 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:18:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:18:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:18:20 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:19:50 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:19:51 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:19:51 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:19:51 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:19:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:19:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:19:52 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:19:53 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:19:53 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:19:53 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:19:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:19:53 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:19:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:19:53 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:19:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:19:53 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:19:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:19:53 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:19:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:19:53 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:19:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:19:53 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:19:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:19:53 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:19:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:19:53 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:19:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:19:53 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:19:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:19:53 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:19:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:19:53 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:19:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:19:53 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:19:53 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:26:52 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:26:53 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:26:53 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:26:53 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:26:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:26:54 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:26:54 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:26:55 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:26:55 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:26:55 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:26:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:26:55 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:26:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:26:55 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:26:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:26:55 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:26:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:26:55 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:26:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:26:55 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:26:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:26:55 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:26:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:26:55 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:26:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:26:55 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:26:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:26:55 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:26:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:26:55 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:26:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:26:55 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:26:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:26:55 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:26:55 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:31:16 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:31:16 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:31:16 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:31:16 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:31:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:31:18 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:31:18 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:31:19 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:31:19 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:31:19 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:31:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:31:19 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:31:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:31:19 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:31:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:31:19 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:31:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:31:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:31:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:31:19 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:31:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:31:19 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:31:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:31:19 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:31:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:31:19 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:31:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:31:19 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:31:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:31:19 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:31:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:31:19 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:31:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:31:19 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:31:19 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:54:33 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:54:33 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:54:33 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:54:33 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:54:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:54:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:54:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:54:35 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:54:35 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:54:35 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:54:35 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:54:35 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:54:35 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:54:35 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:54:35 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:54:35 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:54:35 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:54:35 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:54:35 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:54:35 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:54:35 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:54:35 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:54:35 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:54:35 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:54:35 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:54:35 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:54:35 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:54:35 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:54:35 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:54:35 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:54:35 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:54:35 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:54:35 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:54:35 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:54:35 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 00:58:49 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 00:58:49 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 00:58:49 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 00:58:49 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 00:58:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 00:58:50 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 00:58:51 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 00:58:51 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 00:58:51 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 00:58:51 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 00:58:51 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 00:58:51 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 00:58:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 00:58:51 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 00:58:51 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 00:58:51 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 00:58:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:58:51 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 00:58:51 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 00:58:51 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 00:58:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 00:58:51 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 00:58:51 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 00:58:51 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 00:58:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 00:58:51 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 00:58:51 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 00:58:51 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 00:58:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:58:51 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 00:58:51 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 00:58:51 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 00:58:51 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 00:58:51 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 00:58:51 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 01:05:11 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:05:11 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:05:11 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:05:11 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:05:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 01:05:12 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 01:05:12 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 01:05:13 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 01:05:13 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 01:05:13 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 01:05:13 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 01:05:13 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 01:05:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 01:05:13 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 01:05:13 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 01:05:13 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 01:05:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:05:13 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 01:05:13 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 01:05:13 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 01:05:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:05:13 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 01:05:13 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 01:05:13 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 01:05:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 01:05:13 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 01:05:13 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 01:05:13 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 01:05:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:05:13 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:05:13 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 01:05:13 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 01:05:13 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 01:05:13 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 01:05:13 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 01:13:38 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:13:38 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:13:38 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:13:38 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:13:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 01:13:39 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 01:13:40 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 01:13:40 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 01:13:40 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 01:13:40 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 01:13:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 01:13:40 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 01:13:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 01:13:40 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 01:13:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 01:13:40 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 01:13:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:13:40 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 01:13:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 01:13:40 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 01:13:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:13:40 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 01:13:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 01:13:40 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 01:13:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 01:13:40 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 01:13:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 01:13:40 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 01:13:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:13:40 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:13:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 01:13:40 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 01:13:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 01:13:40 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 01:13:40 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 01:20:35 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:20:36 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:20:36 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:20:36 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:20:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 01:20:37 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 01:20:37 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 01:20:38 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 01:20:38 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 01:20:38 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 01:20:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 01:20:38 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 01:20:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 01:20:38 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 01:20:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 01:20:38 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 01:20:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:20:38 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 01:20:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 01:20:38 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 01:20:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:20:38 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 01:20:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 01:20:38 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 01:20:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 01:20:38 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 01:20:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 01:20:38 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 01:20:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:20:38 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:20:38 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 01:20:38 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 01:20:38 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 01:20:38 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 01:20:38 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 01:28:44 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:28:44 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:28:44 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:28:44 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:28:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 01:28:46 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 01:28:46 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 01:28:47 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 01:28:47 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 01:28:47 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 01:28:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 01:28:47 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 01:28:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 01:28:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 01:28:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 01:28:47 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 01:28:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:28:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 01:28:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 01:28:47 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 01:28:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:28:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 01:28:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 01:28:47 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 01:28:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 01:28:47 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 01:28:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 01:28:47 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 01:28:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:28:47 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:28:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 01:28:47 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 01:28:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 01:28:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 01:28:47 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 01:34:01 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:34:02 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:34:02 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:34:02 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:34:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 01:34:03 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 01:34:03 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 01:34:04 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 01:34:04 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 01:34:04 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 01:34:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 01:34:04 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 01:34:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 01:34:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 01:34:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 01:34:04 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 01:34:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:34:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 01:34:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 01:34:04 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 01:34:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:34:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 01:34:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 01:34:04 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 01:34:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 01:34:04 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 01:34:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 01:34:04 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 01:34:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:34:04 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:34:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 01:34:04 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 01:34:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 01:34:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 01:34:04 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 01:46:51 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:46:51 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:46:51 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:46:51 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:49:13 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 01:49:13 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 01:49:13 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 01:49:13 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 01:49:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 01:49:14 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 01:49:15 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 01:49:15 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 01:49:15 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 01:49:15 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 01:49:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 01:49:15 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 01:49:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 01:49:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 01:49:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 01:49:15 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 01:49:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:49:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 01:49:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 01:49:15 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 01:49:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 01:49:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 01:49:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 01:49:15 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 01:49:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 01:49:15 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 01:49:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 01:49:15 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 01:49:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:49:15 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 01:49:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 01:49:15 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 01:49:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 01:49:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 01:49:15 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-21 02:09:31 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 02:14:46 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-21 02:14:46 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-21 02:14:46 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-21 02:14:46 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-21 02:14:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-21 02:14:47 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-21 02:14:48 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-21 02:14:48 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-21 02:14:48 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-21 02:14:48 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-21 02:14:48 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-21 02:14:48 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-21 02:14:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-21 02:14:48 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-21 02:14:48 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-21 02:14:48 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-21 02:14:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 02:14:48 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-21 02:14:48 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-21 02:14:48 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-21 02:14:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-21 02:14:48 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-21 02:14:48 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-21 02:14:48 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-21 02:14:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-21 02:14:48 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-21 02:14:48 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-21 02:14:48 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-21 02:14:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 02:14:48 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-21 02:14:48 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-21 02:14:48 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-21 02:14:48 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-21 02:14:48 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-21 02:14:48 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 01:01:10 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 01:01:10 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 01:01:10 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 01:01:10 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 01:01:10 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 01:01:11 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 01:01:11 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 01:01:12 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 01:01:12 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 01:01:12 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 01:01:12 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 01:01:12 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 01:01:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 01:01:12 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 01:01:12 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 01:01:12 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 01:01:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 01:01:12 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 01:01:12 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 01:01:12 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 01:01:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 01:01:12 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 01:01:12 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 01:01:12 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 01:01:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 01:01:12 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 01:01:12 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 01:01:12 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 01:01:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 01:01:12 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 01:01:12 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 01:01:12 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 01:01:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 01:01:12 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 01:01:12 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 01:40:25 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 01:40:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 01:40:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 01:40:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 01:40:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 01:40:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 01:40:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 01:40:27 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 01:40:27 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 01:40:27 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 01:40:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 01:40:28 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 01:40:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 01:40:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 01:40:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 01:40:28 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 01:40:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 01:40:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 01:40:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 01:40:28 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 01:40:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 01:40:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 01:40:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 01:40:28 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 01:40:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 01:40:28 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 01:40:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 01:40:28 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 01:40:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 01:40:28 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 01:40:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 01:40:28 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 01:40:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 01:40:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 01:40:28 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 02:02:08 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 02:02:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 02:02:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 02:02:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 02:02:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 02:02:09 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 02:02:10 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 02:02:11 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 02:02:11 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 02:02:11 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 02:02:11 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 02:02:11 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 02:02:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 02:02:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 02:02:11 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 02:02:11 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 02:02:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:02:11 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 02:02:11 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 02:02:11 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 02:02:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:02:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 02:02:11 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 02:02:11 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 02:02:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 02:02:11 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 02:02:11 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 02:02:11 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 02:02:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:02:11 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:02:11 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 02:02:11 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 02:02:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 02:02:11 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 02:02:11 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 02:48:51 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 02:48:51 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 02:48:51 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 02:48:51 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 02:48:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 02:48:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 02:48:53 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 02:48:53 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 02:48:53 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 02:48:53 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 02:48:54 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 02:48:54 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 02:48:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 02:48:54 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 02:48:54 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 02:48:54 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 02:48:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:48:54 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 02:48:54 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 02:48:54 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 02:48:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:48:54 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 02:48:54 INFO  DatabaseMetaData:147 - HHH000262: Table not found: comentarios
+2015-11-26 02:48:54 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 02:48:54 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 02:48:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 02:48:54 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 02:48:54 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 02:48:54 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 02:48:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:48:54 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:48:54 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 02:48:54 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 02:48:54 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 02:48:54 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 02:48:54 INFO  DatabaseMetaData:147 - HHH000262: Table not found: comentarios
+2015-11-26 02:48:54 INFO  DatabaseMetaData:147 - HHH000262: Table not found: comentarios
+2015-11-26 02:48:54 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 02:52:28 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 02:52:28 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 02:52:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 02:52:28 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 02:52:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 02:52:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 02:52:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 02:52:30 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 02:52:30 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 02:52:30 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:52:30 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 02:52:30 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 02:52:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 02:52:30 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 02:52:30 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 02:55:49 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 02:55:49 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 02:55:49 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 02:55:49 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 02:55:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 02:55:50 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 02:55:51 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 02:55:52 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 02:55:52 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 02:55:52 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:55:52 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 02:55:52 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 02:55:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 02:55:52 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 02:55:52 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 02:58:59 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 02:58:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 02:58:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 02:58:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 02:59:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 02:59:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 02:59:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 02:59:02 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 02:59:02 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 02:59:02 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 02:59:02 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 02:59:02 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 02:59:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 02:59:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 02:59:02 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 03:10:01 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 03:10:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 03:10:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 03:10:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 03:10:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 03:10:03 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 03:10:03 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 03:10:04 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 03:10:04 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 03:10:04 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:10:04 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 03:10:04 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 03:10:04 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 03:10:04 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 03:10:04 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 03:22:24 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 03:22:24 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 03:22:24 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 03:22:24 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 03:22:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 03:22:25 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 03:22:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 03:22:26 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 03:22:26 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 03:22:26 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:22:26 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 03:22:26 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 03:22:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 03:22:26 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 03:22:26 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 03:23:37 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 03:23:37 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 03:23:37 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 03:23:37 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 03:23:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 03:23:38 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 03:23:39 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 03:23:40 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 03:23:40 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 03:23:40 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:23:40 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 03:23:40 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 03:23:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 03:23:40 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 03:23:40 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-11-26 03:35:18 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-11-26 03:35:18 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2015-11-26 03:35:18 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-11-26 03:35:18 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-11-26 03:35:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-11-26 03:35:19 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-11-26 03:35:19 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-11-26 03:35:20 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-11-26 03:35:20 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-11-26 03:35:20 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2015-11-26 03:35:20 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2015-11-26 03:35:20 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2015-11-26 03:35:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2015-11-26 03:35:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2015-11-26 03:35:20 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-21 17:44:25 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-21 17:44:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-21 17:44:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-21 17:44:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-21 17:44:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-21 17:44:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-21 17:44:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-21 17:44:27 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-21 17:44:27 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-21 17:44:27 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-21 17:44:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-21 17:44:27 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-21 17:44:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-21 17:44:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-21 17:44:27 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-21 17:44:48 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-21 17:44:48 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-21 17:44:48 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-21 17:44:48 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-21 17:44:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-21 17:44:49 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-21 17:44:50 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-21 17:44:50 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-21 17:44:50 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-21 17:44:50 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-21 17:44:50 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-21 17:44:50 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-21 17:44:50 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-21 17:44:50 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-21 17:44:50 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-23 20:13:53 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-23 20:13:53 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-23 20:13:53 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-23 20:13:53 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-23 20:13:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-23 20:13:54 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 20:13:55 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-23 20:13:55 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-23 20:13:55 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-23 20:13:55 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-23 20:13:55 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-23 20:13:55 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-23 20:13:55 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-23 20:13:55 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-23 20:13:55 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-23 20:35:56 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-23 20:35:56 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-23 20:35:56 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-23 20:35:56 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-23 20:35:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-23 20:35:57 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 20:35:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-23 20:35:59 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-23 20:35:59 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-23 20:35:59 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-23 20:35:59 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-23 20:35:59 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-23 20:35:59 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-23 20:35:59 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-23 20:35:59 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-23 20:37:07 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-23 20:37:07 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-23 20:37:07 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-23 20:37:07 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-23 20:37:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-23 20:37:08 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-23 20:37:09 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-23 20:37:09 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-23 20:37:09 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-23 20:37:09 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-23 20:37:10 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-23 20:37:10 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-23 20:37:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-23 20:37:10 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-23 20:37:10 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 13:28:57 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 13:28:57 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 13:28:57 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 13:28:57 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 13:28:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 13:28:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 13:28:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 13:29:01 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 13:29:01 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 13:29:01 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 13:29:01 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 13:29:01 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 13:29:01 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 13:29:01 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 13:29:01 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 13:29:14 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 13:29:14 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 13:29:14 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 13:29:14 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 13:29:14 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 13:29:14 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 13:29:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 13:29:14 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 13:29:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 13:29:14 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 13:29:14 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 13:35:12 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 13:35:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 13:35:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 13:35:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 13:35:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 13:35:13 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 13:35:14 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 13:35:15 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 13:35:15 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 13:35:15 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 13:35:15 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 13:35:15 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 13:35:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 13:35:15 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 13:35:15 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 13:43:51 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 13:43:51 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 13:43:51 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 13:43:51 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 13:43:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 13:43:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 13:43:52 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 13:43:53 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 13:43:53 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 13:43:53 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 13:43:53 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 13:43:53 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 13:43:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 13:43:53 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 13:43:53 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 13:52:04 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 13:52:04 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 13:52:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 13:52:04 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 13:52:12 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 13:52:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 13:52:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 13:52:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 13:52:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 13:52:13 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 13:52:13 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 13:52:14 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 13:52:14 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 13:52:14 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 13:52:14 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 13:52:14 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 13:52:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 13:52:14 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 13:52:14 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 14:33:16 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 14:33:16 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 14:33:16 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 14:33:16 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 14:33:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 14:33:17 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 14:33:18 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 14:33:19 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 14:33:19 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 14:33:19 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 14:33:19 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 14:33:19 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 14:33:19 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 14:33:19 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 14:33:19 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 15:44:15 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 15:44:15 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 15:44:15 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 15:44:15 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 15:44:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 15:44:16 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 15:44:17 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 15:44:17 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 15:44:17 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 15:44:17 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 15:44:17 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 15:44:17 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 15:44:17 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 15:44:17 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 15:44:17 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-02-29 15:48:36 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-29 15:48:37 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-02-29 15:48:37 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-02-29 15:48:37 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-02-29 15:48:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-02-29 15:48:38 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-29 15:48:38 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-02-29 15:48:39 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-02-29 15:48:39 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-02-29 15:48:39 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-02-29 15:48:39 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-02-29 15:48:39 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-02-29 15:48:39 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-02-29 15:48:39 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-02-29 15:48:39 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:20:24 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:20:24 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:20:24 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:20:24 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:20:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:20:25 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:20:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:20:27 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:20:27 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:20:27 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:20:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:20:27 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:20:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:20:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:20:27 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:22:45 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:22:45 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:22:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:22:45 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:22:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:22:46 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:22:46 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:22:47 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:22:47 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:22:47 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:22:47 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:22:47 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:22:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:22:47 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:22:47 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:24:04 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:24:04 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:24:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:24:04 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:24:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:24:05 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:24:06 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:24:06 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:24:06 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:24:06 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:24:06 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:24:06 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:24:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:24:06 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:24:06 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:28:25 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:28:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:28:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:28:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:28:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:28:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:28:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:28:27 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:28:27 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:28:27 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:28:27 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:28:27 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:28:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:28:27 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:28:27 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:31:26 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:31:26 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:31:26 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:31:26 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:31:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:31:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:31:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:31:28 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:31:28 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:31:28 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:31:28 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:31:28 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:31:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:31:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:31:28 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:41:35 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:41:35 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:41:35 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:41:35 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:41:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:41:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:41:37 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:41:37 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:41:37 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:41:37 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:41:37 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:41:37 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:41:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:41:37 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:41:37 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:49:39 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:49:40 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:49:40 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:49:40 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:49:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:49:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:49:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:49:42 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:49:42 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:49:42 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:49:42 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:49:42 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:49:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:49:42 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:49:42 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2016-03-01 22:57:34 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-01 22:57:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2016-03-01 22:57:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-01 22:57:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-01 22:57:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-01 22:57:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-01 22:57:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-01 22:57:36 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2016-03-01 22:57:36 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2016-03-01 22:57:36 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.autores
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [usuario_id, biografia, nome, id]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rr14kaoiis5aul5egoqjydxd1]
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_nm3lqihf39ftusc2plavv9hmj, fk_rr14kaoiis5aul5egoqjydxd1, primary]
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.avatares
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [tipo, titulo, id, avatar]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.categorias
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [id, permalink, descricao]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_8qam7jmycbxisusk16hyac3ei, uk_k7oxlxwddce9c4268jr55l90k, primary]
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.comentarios
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [texto, postagem_id, usuario_id, id, data_comentario]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0]
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_rw0qdis0ugacna6cr0qlmjrmp, fk_rkfv2cjkrm62jgmeyfeceaqf0, primary]
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [texto, titulo, autor_id, id, permalink, data_postagem]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy]
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_mwm5x8i4mlh0u2s0k8a4cjvdy, uk_1kh3gjl4xsqij1st0y6uyilyd, uk_bv6x0akwkkpy945gp2hp6tgx3, primary]
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.postagens_has_categorias
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [postagem_id, categoria_id]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_dn464moxj3nl2hsp3im09r8wi, fk_4edehhcy0i4itkvah294b53yg]
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [fk_4edehhcy0i4itkvah294b53yg, fk_dn464moxj3nl2hsp3im09r8wi]
+2016-03-01 22:57:36 INFO  TableMetadata:66 - HHH000261: Table found: blog.usuarios
+2016-03-01 22:57:36 INFO  TableMetadata:67 - HHH000037: Columns: [senha_hash, avatar_id, data_cadastro, nome, id, email, perfil]
+2016-03-01 22:57:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_1viseg42e5ulcg81pw2taux7p]
+2016-03-01 22:57:36 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_exw5vja1pgfobcpqtldhnx6uv, uk_kfsp0s1tflm1cwlj8idhqsad0, fk_1viseg42e5ulcg81pw2taux7p, primary]
+2016-03-01 22:57:36 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
